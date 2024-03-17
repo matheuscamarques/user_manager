@@ -1,6 +1,8 @@
 # UserManager
 
-**TODO: Add description**
+
+![image](https://github.com/matheuscamarques/user_manager/assets/37029621/e9c31698-c6ce-40ed-a576-9fd149382651)
+
 
 ## Installation
 
