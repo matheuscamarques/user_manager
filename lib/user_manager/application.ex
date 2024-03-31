@@ -12,8 +12,7 @@ defmodule UserManager.Application do
     children = [
       # Starts a worker by calling: UserManager.Worker.start_link(arg)
       # {UserManager.Worker, arg}
-      {Phoenix.PubSub,
-      name: UserManager.PubSub},
+      {Phoenix.PubSub, name: UserManager.PubSub},
       {EventBucket, []}
     ]
 
