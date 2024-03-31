@@ -1,15 +1,15 @@
 defmodule UserManager.Repo.UserRepository do
-  def insert(user) do
-    uuid = UUID.uuid4()
-    # user validations
-    # hashing_password
-    # Insert on database
-    created_user = Map.put(user, :id, uuid)
-
-    case :ets.insert_new(:user_lookup, {user.email, created_user}) do
-      true -> {:ok, created_user}
+  def insert(%{id: _} = user) do
+    case :ets.insert_new(:user_lookup, {user.email, user}) do
+      true -> {:ok, user}
       false -> {:error, :user_already_registred}
     end
+  end
+
+  def insert(user) do
+    uuid = UUID.uuid4()
+    created_user = Map.put(user, :id, uuid)
+    insert(created_user)
   end
 
   def get(email) do
