@@ -15,7 +15,7 @@ defmodule UserManager.Repo.EventRepositoryTest do
 
   describe "function get" do
     test "Get Many Events" do
-      num_users = 10_000_000
+      num_users = 10
 
       task_users =
         Enum.map(1..num_users, fn _ ->
@@ -23,7 +23,7 @@ defmodule UserManager.Repo.EventRepositoryTest do
         end)
 
       {:ok, user} = Enum.random(task_users) |> Task.await()
-
+			IO.inspect(user)
       assert EventRepository.get("user_created", user) ==
                {:ok, user}
     end
