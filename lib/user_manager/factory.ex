@@ -1,8 +1,4 @@
 defmodule UserManager.Factory do
-
-  @doc """
-
-  """
   def build(:user, atributes \\ %{}) do
     data(:user, atributes)
     |> UserManager.create_user()
