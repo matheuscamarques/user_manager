@@ -5,6 +5,13 @@ Distributed user manager with pubsub, libcluster and ets memory save to create y
 
 This job is responsible for CRUD users in its in-memory database (prioritively), when the user is successfully created we emit the event that created the user to the other nodes via Phoenix.PubSub. Using the LibCluster library we can make these nodes work together to create an easily scalable, fault-tolerant and high-performance User Manager.
 
+# Youtube Séries
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-vEcA2fxoKE?si=1NkJ9owDz_rMUh4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hbnPuopmukI?si=nvKmk8IiPN4kZ8Tx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hbnPuopmukI?si=nvKmk8IiPN4kZ8Tx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
