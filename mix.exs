@@ -24,9 +24,18 @@ defmodule UserManager.MixProject do
     [
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      # Using on create users index
       {:uuid, "~> 1.1.8"},
+      # Used for communicate nodes
       {:phoenix_pubsub, "~> 2.0"},
-      {:libcluster, "~> 3.3.3"}
+      # Clustering Application on production ambient
+      {:libcluster, "~> 3.3.3"},
+      # Using for validations schemas
+      {:ecto, "~> 3.11.2"},
+      # Bcrypt for the passwords
+      {:bcrypt_elixir, "~> 3.1.0"},
+      # Faker fot the test
+      {:faker, "~> 0.18", only: [:dev, :test]}
     ]
   end
 end
